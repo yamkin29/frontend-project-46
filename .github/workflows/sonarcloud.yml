@@ -50,6 +50,8 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
+      - name: Run tests (with coverage)
+        run: npm run test:coverage
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v2
         env:
