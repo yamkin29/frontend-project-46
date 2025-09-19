@@ -1,5 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/yamkin29/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/yamkin29/frontend-project-46/actions)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=yamkin29_frontend-project-46&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=yamkin29_frontend-project-46)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=yamkin29_frontend-project-46&metric=coverage)](https://sonarcloud.io/summary/new_code?id=yamkin29_frontend-project-46)
 
 [![asciicast](https://asciinema.org/a/HEsUE9HOLNBSRtHvkhTyjzZiF.svg)](https://asciinema.org/a/HEsUE9HOLNBSRtHvkhTyjzZiF)
