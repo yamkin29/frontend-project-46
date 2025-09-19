@@ -21,6 +21,20 @@ jobs:
       - name: Run ESLint
         run: npm run lint:ci
 
+  test:
+    name: Jest
+    needs: lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+      - run: npm ci
+      - name: Run tests
+        run: npm test -- --ci --runInBand
+
   sonarcloud:
     name: Analyze on SonarCloud
     needs: lint
@@ -36,8 +50,6 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
-      - name: Run tests (with coverage)
-        run: npm run test:coverage
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v2
         env:
