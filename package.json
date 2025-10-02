@@ -35,5 +35,11 @@
     "@stylistic/eslint-plugin": "^5.2.1",
     "eslint": "^9.31.0",
     "jest": "^30.1.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "collectCoverageFrom": ["src/**/*.js"],
+    "coverageDirectory": "coverage"
   }
 }

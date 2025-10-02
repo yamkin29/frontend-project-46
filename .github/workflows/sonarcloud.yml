@@ -37,7 +37,7 @@ jobs:
 
   sonarcloud:
     name: Analyze on SonarCloud
-    needs: lint
+    needs: [lint, test]
     runs-on: ubuntu-latest
     permissions:
       contents: read
