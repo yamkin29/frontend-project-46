@@ -11,19 +11,19 @@ const getFixturePath = name => path.resolve(__dirname, '..', '__fixtures__', nam
 const readFixture = name => readFileSync(getFixturePath(name), 'utf-8')
 
 test('gendiff flat YAML -> expected stylish output', () => {
-    const file1 = getFixturePath('file1.yml')
-    const file2 = getFixturePath('file2.yml')
-    const expected = readFixture('expected_flat.txt')
+  const file1 = getFixturePath('file1.yml')
+  const file2 = getFixturePath('file2.yml')
+  const expected = readFixture('expected_flat.txt')
 
-    const result = genDiff(file1, file2)
-    expect(result).toBe(expected)
+  const result = genDiff(file1, file2)
+  expect(result).toBe(expected)
 })
 
 test('gendiff mixed formats (json + yml)', () => {
-    const json = getFixturePath('file1.json')
-    const yml = getFixturePath('file2.yml')
-    const expected = readFixture('expected_flat.txt')
+  const json = getFixturePath('file1.json')
+  const yml = getFixturePath('file2.yml')
+  const expected = readFixture('expected_flat.txt')
 
-    const result = genDiff(json, yml)
-    expect(result).toBe(expected)
+  const result = genDiff(json, yml)
+  expect(result).toBe(expected)
 })

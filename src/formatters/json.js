@@ -1,3 +1,3 @@
 export default function json(ast) {
-    return `${JSON.stringify(ast, null, 2)}`
+  return `${JSON.stringify(ast, null, 2)}`
 }
