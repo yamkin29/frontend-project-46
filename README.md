@@ -11,3 +11,6 @@
 
 ### Nested JSON files:
 [![asciicast](https://asciinema.org/a/kZUq9oYmSUuEeE8nYJItNWYtX.svg)](https://asciinema.org/a/kZUq9oYmSUuEeE8nYJItNWYtX)
+
+### Plain format:
+[![asciicast](https://asciinema.org/a/fVEhDoFYphx0UNN91HIPZthlk.svg)](https://asciinema.org/a/fVEhDoFYphx0UNN91HIPZthlk)
